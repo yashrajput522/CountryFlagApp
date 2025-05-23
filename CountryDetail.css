@@ -1,0 +1,110 @@
+.not-Found {
+    background-color: #f0f4f8; /* Light grey-blue background for a modern feel */
+    color: #333;               /* Dark gray text for better readability */
+    padding: 40px;             /* More padding for breathing space */
+    text-align: center;        /* Center align the text */
+    margin: 40px auto;         /* Center the div and add space around it */
+    border-radius: 8px;        /* Softer rounded corners */
+    width: 60%;                /* Adjust width to make it responsive */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    font-family: 'Arial', sans-serif; /* Clean font style */
+  }
+  
+  .not-Found h2 {
+    font-size: 28px;           /* Larger font for the heading */
+    color: #2c3e50;            /* Darker color for contrast */
+    margin-bottom: 20px;       /* Space below the heading */
+  }
+  
+  .not-Found p {
+    font-size: 18px;           /* Professional size for additional messages */
+    color: #7f8c8d;            /* Lighter text color for subtext */
+  }
+  
+  .not-Found a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #3498db; /* A blue color for CTA button */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .not-Found a:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+
+---
+.country-details-container {
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-top: 32px;
+}
+
+.back-button {
+    padding: 6px 24px;
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.country-details {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    margin-top: 64px;
+}
+
+.country-details img {
+    width: 40%;
+    border: 1px solid #ddd;
+}
+
+.details-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    column-gap: 64px;
+    max-height: 180px;
+    flex-wrap: wrap;
+}
+
+.details-text p {
+    margin: 0;
+}
+
+.border-countries {
+    margin-top: 48px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.border-countries a {
+    padding: 4px 16px;
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+@media(max-width: 940px) {
+    .country-details {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 32px;
+        gap: 16px;
+    }
+
+    .details-text {
+        max-height: unset;
+    }
+
+    .country-details img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+}
